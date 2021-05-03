@@ -30,3 +30,37 @@ totalDebt = totalDebt + 150;
 //console.log(totalDebt);
 
 
+//conditionial with if statements
+function messageForNumber(number){
+  if (number <= 3){
+    return "This is a small number";
+  }
+
+  else if (number > 3 || number <= 7 ) {
+    return "This is a medium number";
+  }
+
+  else if (number > 7){
+    return "This is a large number";
+  }
+
+}
+//console.log(messageForNumber(5));
+
+//while loops
+let number = 0;
+while (number <= 12){ //while this number is less than 12
+  console.log(number); //number will be printed out
+  number = number + 2; //value of number is being updated
+}
+
+//for loop and breaking out of a loop
+for (let current = 20; ;current = current + 1){ //';;' here means while (true), it will never break
+    if (current % 7 ==0){ //if the current value is divisible by 7
+      console.log("Current value : " + current);
+      break; //it will break out of the loop after printing out the current value
+    }
+}
+
+
+
