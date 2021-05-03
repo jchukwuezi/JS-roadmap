@@ -1,37 +1,32 @@
-/*
-function twoFer(name){
-    let name = 'you'
-    console.log(`One for ${name}, one for me`)
-}
-*/
+/*Defining a variable: let, var and const */
 
+//formerly var was used
+var x = 23;
 
-const twoFer = (name = 'you') => {
-    console.log(`One for ${name}, one for me`);
-}
-
-numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-colors = ['black', 'brown', 'red', 'orange', 'yellow', 
-'green', 'blue', 'violet', 'grey', 'white']
-
-function createResistor(colors, numbers){
-    for (i = 0; i < colors.length; i++){
-      result = {};
-      key = colors[i]
-      for (j =0; j < numbers.length; j++){
-        value = numbers[j];
-        result[key] = value;
-        console.log(result);
-      }
-    }
+//In JavaScript ES6, let and const were introduced
+if (true){
+  let a = 23; //let is limited to the scope of block statement, unlike var.
+  //let means the variable could be reassigned
 }
 
+//const means that the variable cannot be reassigned
+//to be used when the value doesn't change over course of execution
+const name = 'Joshua'
+
+function printFirstName(){
+  console.log(name);
+}
+
+//printFirstName()
+
+let firstName = "Jamie";
+const greeting = "Hello ";
+//console.log(greeting + firstName);
 
 
-createResistor(colors, numbers);
+//updating a value
+let totalDebt = 150;
+totalDebt = totalDebt + 150;
+//console.log(totalDebt);
 
 
-/*
-console.log(twoFer());
-console.log(twoFer('Joshua'));
-*/
