@@ -8,15 +8,19 @@ function findSibling(){
   
     switch (random){
       case 1: 
-        console.log('Sibling 1');
+        //console.log('Sibling 1');
+        return 'Sibling 1';
       case 2:
-        console.log('Sibling 2');
+        //console.log('Sibling 2');
+        return 'Sibling 2';
       case 3:
-        console.log('Sibling 3');
+        //console.log('Sibling 3');
+        return 'Sibling 3';
       case 4:
-        console.log('Sibling 4');
+        //console.log('Sibling 4');
+        return 'Sibling 4';
     }
-  
   }
+
+  console.log(findSibling());
   
-  findSibling();

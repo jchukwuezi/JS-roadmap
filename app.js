@@ -73,4 +73,8 @@ for (let current = 20; ;current = current + 1){ //';;' here means while (true), 
 //switch statement
 /* This switch statement is in the switch-statement.js file */
 
-
+/*Arrow Functions: without the function keyword*/
+const getName = () => {
+  return 'Michael';
+}
+console.log(getName());
